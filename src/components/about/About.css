@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.info_container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.container_text {
+    width: 53%;
+    height: 76%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Calibre', sans-serif;
+    src: url(../../assets/Calibre-0P3z.ttf);
+    /* background-color: #64ffda; */
+}
+
+.container_text p {
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.container_text h3 {
+    color: #64ffda;
+    font-family: var(--font);
+    font-weight: 500;
+    padding: 0px 0px 20px 0px;
+}
+
+.container_text > h3 > b {
+    font-size: 35px;
+    font-family: var(--font-raleway);
+    color: #ccd6f6;
+    padding: 0px 10px;
+}
+
+.img {
+    background-image: url("https://d1bvpoagx8hqbg.cloudfront.net/originals/how-to-take-a-good-photo-for-your-cv-our-top-tips-e529cea3222e81502875a139a070a9fe.jpg");
+    width: 40%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.wrapper p{
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: var(--font-raleway);
+}
+
+.wrapper p b {
+    color: #64ffda;
+    cursor: pointer;
+    transform: scale(1);
+    transition: ease-in 250ms;
+    padding: 4px 6px;
+    line-height: 30px;
+}
+
+.wrapper b:hover {
+    padding: 4px 6px;
+    background-color: #34383742;
+    border-radius: 4px;
+    transition: ease-in 250ms;
+    color: #8892B0;
+}

@@ -1,0 +1,34 @@
+h1 {
+    color: #fff;
+}
+
+
+
+/* .banner {
+    width: 85vw;
+    height: 80vh;
+    border-radius: 25px;
+    margin: 5vh auto;
+    border: 3px solid #CCD6F6;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.left p {
+    color: #CCD6F6;
+    font-family: var(--main-ff-sanS);
+}
+
+
+.scroll {
+    color: #08fdd8;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%) rotate(270deg);
+} */
