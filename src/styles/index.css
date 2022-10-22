@@ -1,27 +1,34 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Raleway&display=swap');
 :root {
-  --ff-family: 'Space Mono', monospace;
-  --font: 'Share Tech Mono', monospace;
-  --font-raleway: 'Raleway', san-serif;
+  --ff-family: "Space Mono", monospace;
+  --font: "Share Tech Mono", monospace;
+  --font-raleway: "Raleway", san-serif;
+  --font-v: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --white: #fff;
+  --blue-main: #64ffda;
+  --gray-blue: #6F7791;
+  --title-blue: #21a9a9;
+  --blue-nd: #08fdd8;
 }
 
-
-*,*::before,::after {
+*,
+*::before,
+::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,8 +37,7 @@ body {
   scroll-behavior: smooth;
 }
 
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

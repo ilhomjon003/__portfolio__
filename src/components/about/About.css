@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,78 +11,85 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--white);
 }
 
 .info_container {
     width: 80%;
-    height: 80%;
+    height: 100%;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 50px;
+    margin-top: 10%;
 }
 
 .container_text {
-    width: 53%;
+    width: 600px;
     height: 76%;
     display: flex;
     flex-direction: column;
-    font-family: 'Calibre', sans-serif;
-    src: url(../../assets/Calibre-0P3z.ttf);
-    /* background-color: #64ffda; */
+}
+
+.wrapper {
+    animation: opacity .6s linear 1;
 }
 
 .container_text p {
     line-height: 25px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .container_text h3 {
-    color: #64ffda;
+    color: var(--blue-main);
     font-family: var(--font);
-    font-weight: 500;
+    animation: opacity .4s linear 1;
+    font-weight: 400;
+    font-size: 20px;
     padding: 0px 0px 20px 0px;
 }
 
 .container_text > h3 > b {
-    font-size: 35px;
+    font-size: 25px;
     font-family: var(--font-raleway);
-    color: #ccd6f6;
-    padding: 0px 10px;
+    color: var(--gray-blue);
+    animation-delay: .3s;
 }
 
 .img {
-    background-image: url("https://d1bvpoagx8hqbg.cloudfront.net/originals/how-to-take-a-good-photo-for-your-cv-our-top-tips-e529cea3222e81502875a139a070a9fe.jpg");
-    width: 40%;
-    height: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 350px;
+    animation: opacity .6s linear 1;
+    height: 65%;
+    margin: 50px 0px;
+    position: relative;
+}
+.img > img {
+    width: 100%;
     border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .wrapper p{
     width: 100%;
     height: auto;
     margin: 10px 0px;
-    line-height: 28px;
-    letter-spacing: 1px;
+    line-height: 35px;
+    color: #cbcbcb;
     font-family: var(--font-raleway);
+    font-weight: 500;
 }
 
 .wrapper p b {
-    color: #64ffda;
+    color: var(--blue-main);
     cursor: pointer;
-    transform: scale(1);
-    transition: ease-in 250ms;
+    transition: ease-in 850ms;
     padding: 4px 6px;
-    line-height: 30px;
+    border: 1px solid transparent;
+    line-height: 35px;
 }
 
 .wrapper b:hover {
     padding: 4px 6px;
-    background-color: #34383742;
-    border-radius: 4px;
-    transition: ease-in 250ms;
-    color: #8892B0;
+    border: 1px solid var(--blue-main);
+    transition: ease-in 150ms;
 }
