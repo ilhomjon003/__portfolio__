@@ -49,6 +49,32 @@ h1 {
   color: var(--white);
 }
 
+.tracker {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #21a9a9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  transition: .2s ease;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #21a9a9;
+  position: fixed;
+  left: 0;
+  transform: translate(-50%, -50%);
+  top: 0;
+  border-radius: 50%;
+  transition: .18s ease;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   background-color: transparent;
@@ -62,6 +88,6 @@ h1 {
 }
 
 ::selection {
-  background-color: var(--blue-main);
-  color: var(--gray-blue);
+  color: #000;
+  background-color: var(--blue-nd);
 }

@@ -9,6 +9,7 @@ const Header = () => {
 
   const changeMenuState = () => setIsMenuVisible(!isMenuVisible);
 
+  const sliced = NavRoutes.slice(0, 4);
   return (
     <div className="header">
       <div className="navigation">
@@ -29,7 +30,7 @@ const Header = () => {
         </div>
 
         <ul className={isMenuVisible ? "dropdown" : "navigation_collection"}>
-          {NavRoutes?.map(({ path, title, id }) => (
+          {sliced?.map(({ path, title, id }) => (
             <Link to={path} key={id} onClick={() => setIsMenuVisible(false)}>
               <li className="item">
                 0{id}. <p>{title}</p>

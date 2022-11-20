@@ -27,4 +27,9 @@ export const NavRoutes = [
     path: "/contact",
     component: <Contact />,
   },
+  {
+    id: 4,
+    path: "/",
+    component: <Home />,
+  }
 ];
