@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Raleway&display=swap");
 :root {
   --ff-family: "Space Mono", monospace;
   --font: "Share Tech Mono", monospace;
@@ -8,7 +8,7 @@
     "Lucida Sans", Arial, sans-serif;
   --white: #fff;
   --blue-main: #64ffda;
-  --gray-blue: #6F7791;
+  --gray-blue: #6f7791;
   --title-blue: #21a9a9;
   --blue-nd: #08fdd8;
 }
@@ -40,4 +40,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  color: var(--white);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 100px;
+  background-color: rgba(223, 218, 218, 0.484);
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
+
+::selection {
+  background-color: var(--blue-main);
+  color: var(--gray-blue);
 }

@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Roboto:wght@500&display=swap");
-
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Mono', monospace; */
-
 .header {
   max-width: 100vw;
   width: 100%;
@@ -14,10 +10,10 @@ font-family: 'Roboto Mono', monospace; */
   background-color: transparent;
 }
 
-
 .navigation {
   width: 90%;
   height: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,4 +85,43 @@ font-family: 'Roboto Mono', monospace; */
   color: #ddd;
   transition: 400ms;
   transform: scale(1.1);
+}
+
+.icons__container {
+  display: none;
+}
+
+@media screen and (max-width: 924px) {
+  .navigation_collection {
+    display: none;
+  }
+
+  .dropdown {
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    z-index: 999;
+    align-items: center;
+  }
+
+  .item {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .icons__container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 }

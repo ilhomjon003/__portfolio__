@@ -1,17 +1,22 @@
-import "./styles/App.css";
-// import { Router } from "react-router-dom";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import AnimatedRoutes from "./components/animated/AnimatedRoutes";
+import { Route, Switch } from "react-router-dom";
+import { NavRoutes } from "./routes";
+import Header from "./pages/header/Header";
+import Footer from "./pages/footer/Footer";
 
-function App() {
+const App = () => {
   return (
-    <>
-        <Header />
-        <AnimatedRoutes />
-        <Footer />
-    </>
+    <div>
+      <Header />
+      <Switch>
+        {NavRoutes.map(({ id, path, component }) => (
+          <Route exact key={id} path={path}>
+            {component}
+          </Route>
+        ))}
+      </Switch>
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
