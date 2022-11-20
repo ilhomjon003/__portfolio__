@@ -30,7 +30,7 @@ const Header = () => {
 
         <ul className={isMenuVisible ? "dropdown" : "navigation_collection"}>
           {NavRoutes?.map(({ path, title, id }) => (
-            <Link to={path} key={id} onClick={changeMenuState}>
+            <Link to={path} key={id} onClick={() => setIsMenuVisible(false)}>
               <li className="item">
                 0{id}. <p>{title}</p>
               </li>

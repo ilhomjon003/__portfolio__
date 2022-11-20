@@ -7,7 +7,6 @@ const About = () => {
 
   return (
     <Container>
-
       <div className='about'>
         <div className="info_container">
           <div className="container_text">
